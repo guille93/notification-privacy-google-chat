@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy — HomePi Finance</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:760px;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#1b1f24}h1{font-size:1.5rem;border-bottom:1px solid #d0d7de;padding-bottom:.3rem}code{background:#f6f8fa;padding:.1em .3em;border-radius:4px}footer{margin-top:2rem;font-size:.85rem;color:#57606a}</style></head><body>
+<h1>Privacy Policy</h1>
+<p><strong>Last updated: 2026-11-07</strong></p>
+<h2>1. Controller</h2>
+<p>Guillermo Cordero Moreno (&ldquo;the controller&rdquo;). Contact: <code>guille93@users.noreply.github.com</code></p>
+<h2>2. What this application is</h2>
+<p>&ldquo;HomePi Finance&rdquo; is a personal, non-commercial open-banking client (BankingSync) that reads account information and transactions (AIS) of the controller&rsquo;s <strong>own</strong> bank accounts via Enable Banking Oy (a licensed TPP) under PSD2, and writes them into a self-hosted Actual Budget instance for personal budgeting.</p>
+<h2>3. Data processed</h2>
+<ul>
+<li>Account metadata (account name, IBAN as provided by the bank, balance) and transactions of the controller&rsquo;s own accounts at Santander and Revolut.</li>
+<li>Technical logs of the local services (no bank data shared with third parties).</li>
+</ul>
+<h2>4. Purpose and legal basis</h2>
+<p>Personal budgeting and financial overview. Legal basis: consent (Art. 6(1)(a) GDPR), given by the controller when authorizing each bank account. Consent can be withdrawn at any time at the bank, in Enable Banking, or by deleting the local data.</p>
+<h2>5. Storage and location</h2>
+<p>Data is stored on the controller&rsquo;s self-hosted server located in <strong>Spain</strong>. The services are reachable only through a private Tailscale tailnet with per-device identity checks; on the LAN they are bound to <code>127.0.0.1</code> only and are not publicly exposed. Backups are encrypted with <code>age</code>; the private key exists only on the controller&rsquo;s personal computer.</p>
+<h2>6. Recipients and sharing</h2>
+<p>The only recipients are (a) the controller&rsquo;s own banks, for authentication/consent, and (b) Enable Banking Oy, as the licensed third-party provider relaying the bank data under PSD2. Data is <strong>not</strong> sold, rented, shared for advertising, or used for profiling. No third-party analytics or trackers are used.</p>
+<h2>7. Retention</h2>
+<p>Bank data is kept while the corresponding bank consent is active; encrypted backups are retained for 14 days and then deleted.</p>
+<h2>8. Security measures</h2>
+<p>TLS in transit, tailnet-only access, least-privilege containers (no root, read-only filesystems, dropped capabilities), and encrypted backups.</p>
+<h2>9. Your rights</h2>
+<p>Access, rectification, erasure, restriction, portability, objection, and withdrawal of consent, per GDPR. You may also lodge a complaint with the Spanish Data Protection Agency (<a href="https://www.aepd.es">aepd.es</a>). Contact: <code>guille93@users.noreply.github.com</code></p>
+<h2>10. Changes</h2>
+<p>Updates to this policy are published at this URL.</p><footer>Personal, non-commercial application &middot; Controller: Guillermo Cordero Moreno &middot; Contact: guille93@users.noreply.github.com</footer></body></html>
